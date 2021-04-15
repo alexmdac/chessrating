@@ -3,9 +3,17 @@
 This app retrieves a [chess.com](http://chess.com) user's rating history, and
 predicts the user's future rating using linear regression.
 
+## Installation
+
+Install go and make sure that `$GOPATH/bin` is in your `$PATH`.
+```
+$ go get github.com/alexmdac/chessrating
+$ go install github.com/alexmdac/chessrating
+```
+
 ## Example
 
-To predict user the rating of `alexmdac` in 30 days based on 30 days of history:
+To predict the rating of `alexmdac` in 30 days based on 30 days of history:
 ```
 $ chessrating -user alexmdac -days-ago 30 -days-in-future 30
 1180
